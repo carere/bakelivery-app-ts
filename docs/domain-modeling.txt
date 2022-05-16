@@ -1,0 +1,34 @@
+Bounded Context: Basket Management
+
+------------------------------------------
+WORKFLOWS
+------------------------------------------
+
+Workflow: Add Product to Basket
+    input:
+        Product Catalog
+    output events:
+        "Product added to basket" event
+    side-effects:
+        basket total updated
+
+------------------------------------------
+DATA
+------------------------------------------
+
+data Product =
+    ProductId
+    AND ProductName
+    AND ProductPrice
+    AND ProductStatus
+
+data ProductId = string
+data ProductName = string
+data ProductStatus = Available OR NotAvailable
+
+data ProductCatalog = list Product
+
+data ProductAddedToBasket =
+    ProductId
+
+
