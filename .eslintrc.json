@@ -5,8 +5,9 @@
     "project": ["./tsconfig.json"]
   },
   "env": {
-    "es2022": true,
-    "jest": true
+    "browser": true,
+    "jest": true,
+    "es6": true
   },
   "plugins": ["@typescript-eslint", "fp"],
   "extends": [
