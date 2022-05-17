@@ -1,5 +1,5 @@
 {
   "*.{ts,tsx}": ["eslint --cache --fix"],
-  "*.{json}": ["prettier --write"],
+  "*.{ts,tsx,json}": ["prettier --write"],
   "package.json": "sort-package-json"
 }

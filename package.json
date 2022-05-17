@@ -7,13 +7,17 @@
     "format": "prettier --write **/*.{ts,json,tsx}",
     "lint": "eslint . --ext .ts,.tsx --cache --fix",
     "prepare": "husky install",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:unit": "jest test/unit"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "1.*",
     "react": "18.*",
-    "react-dom": "18.*"
+    "react-dom": "18.*",
+    "ts-pattern": "4.*"
   },
   "devDependencies": {
+    "@types/jest": "27.*",
     "@types/react": "18.*",
     "@types/react-dom": "18.*",
     "@typescript-eslint/eslint-plugin": "5.*",
@@ -23,11 +27,13 @@
     "cz-conventional-changelog": "3.*",
     "eslint": "8.*",
     "eslint-config-prettier": "8.*",
-    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-fp": "2.*",
     "husky": "8.*",
+    "jest": "28.*",
     "lint-staged": "12.*",
     "prettier": "2.*",
     "sort-package-json": "1.*",
+    "ts-jest": "28.*",
     "typescript": "4.*",
     "vite": "2.*"
   },

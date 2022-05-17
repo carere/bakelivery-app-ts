@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["bakelivery", "vite", "vitejs"],
+  "cSpell.words": ["bakelivery", "reduxjs", "upsert", "vite", "vitejs"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 100,
