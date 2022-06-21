@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@reduxjs/toolkit': 1.*
   '@types/jest': 27.*
+  '@types/ramda': ^0.28.12
   '@types/react': 18.*
   '@types/react-dom': 18.*
   '@typescript-eslint/eslint-plugin': 5.*
@@ -17,6 +18,7 @@ specifiers:
   jest: 28.*
   lint-staged: 12.*
   prettier: 2.*
+  ramda: 0.*
   react: 18.*
   react-dom: 18.*
   sort-package-json: 1.*
@@ -27,12 +29,14 @@ specifiers:
 
 dependencies:
   '@reduxjs/toolkit': 1.8.1_react@18.1.0
+  ramda: 0.28.0
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   ts-pattern: 4.0.2
 
 devDependencies:
   '@types/jest': 27.5.1
+  '@types/ramda': 0.28.12
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.4
   '@typescript-eslint/eslint-plugin': 5.23.0_c63nfttrfhylg3zmgcxfslaw44
@@ -980,6 +984,12 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: true
+
+  /@types/ramda/0.28.12:
+    resolution: {integrity: sha512-01lBa/nWJMmzc7uwvN4pzoePRWMURV1uRpchCpomAFW1MvMSyOtHjj8/WpaCFrrBQ8Mvpasm/CK3YpcWbVcZ3g==}
+    dependencies:
+      ts-toolbelt: 6.15.5
     dev: true
 
   /@types/react-dom/18.0.4:
@@ -3644,6 +3654,10 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
 
+  /ramda/0.28.0:
+    resolution: {integrity: sha512-9QnLuG/kPVgWvMQ4aODhsBUFKOUmnbUnsSXACv+NCQZcHbeb+v8Lodp8OVxtRULN1/xOyYLLaL6npE6dMq5QTA==}
+    dev: false
+
   /react-dom/18.1.0_react@18.1.0:
     resolution: {integrity: sha512-fU1Txz7Budmvamp7bshe4Zi32d0ll7ect+ccxNu9FlObT605GOEB8BfO4tmRJ39R5Zj831VCpvQ05QPBW5yb+w==}
     peerDependencies:
@@ -4191,6 +4205,10 @@ packages:
   /ts-pattern/4.0.2:
     resolution: {integrity: sha512-eHqR/7A6fcw05vCOfnL6RwgGJbVi9G/YHTdYdjYmElhDdJ1SMn7pWs+6+YuxygaFwQS/g+cIDlu+UD8IVpur1A==}
     dev: false
+
+  /ts-toolbelt/6.15.5:
+    resolution: {integrity: sha512-FZIXf1ksVyLcfr7M317jbB67XFJhOO1YqdTcuGaq9q5jLUoTikukZ+98TPjKiP2jC5CgmYdWWYs0s2nLSU0/1A==}
+    dev: true
 
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}

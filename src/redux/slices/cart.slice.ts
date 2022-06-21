@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { append } from 'ramda';
 
 type CartState = {
   products: Array<string>;
@@ -16,8 +17,7 @@ const slice = createSlice({
   reducers: {
     add: (state, action: PayloadAction<{ id: string; price: number }>) => {
       return {
-        ...state,
-        products: [...state.products, action.payload.id],
+        products: append(action.payload.id, state.products),
         total: state.total + action.payload.price,
       };
     },
